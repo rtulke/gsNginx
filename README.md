@@ -1,0 +1,2 @@
+# gsNginx
+gSales Nginx Configuration
