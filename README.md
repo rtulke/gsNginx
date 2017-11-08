@@ -51,7 +51,7 @@ zend_loader.license_path=
 
 ## Troubleshooting
 
-Das Nginx Log zeigt z.B. folgenden Fehler:
+Error Log from Nginx:
 
 ~~~
 2017/01/31 15:51:03 [error] 20891#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Incompatible file format:  The encoded file has format major ID 5, whereas the Loader expects 7 in /home/webapp/gsales.mirrle.com/index.php on line 0" while reading response header from upstream, client: 178.197.227.143, server: gsales.mirrle.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "gsales.mirrle.com"
