@@ -46,7 +46,7 @@ zend_loader.license_path=
 ~~~
 
 ~~~
-/etc/init.d/php5-fpm restart
+systemctl restart php5-fpm.service
 ~~~
 
 ## Troubleshooting
