@@ -1,5 +1,5 @@
 # gsNginx
-gSales Nginx Configuration
+gSales Nginx Configuration on Debian 8.x, 9.x
 
 
 ## Download Zend Guard Loader from website:
@@ -8,7 +8,7 @@ gSales Nginx Configuration
 
 You have to register on Zend website first.
 
-## Zend Guard Loader 5.6 installation (Debian 8.x, 9.x)
+## Zend Guard Loader 5.6 installation
 
 after registration:
 
