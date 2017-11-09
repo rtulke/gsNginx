@@ -49,6 +49,13 @@ zend_loader.license_path=
 systemctl restart php5-fpm.service
 ~~~
 
+
+## Nginx site configuration
+
+mkdir dev
+git clone 
+
+
 ## Troubleshooting
 
 Error Log from Nginx:
