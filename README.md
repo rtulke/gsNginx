@@ -62,8 +62,8 @@ ln -s ../sites-available/gsales.mydomain.com gsales.mydomain.com
 systemctl restart nginx
 ~~~
 
-or: /etc/init.d/nginx restart
-or: service nginx restart
+- /etc/init.d/nginx restart
+- service nginx restart
 
 ## Troubleshooting
 
