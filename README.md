@@ -53,8 +53,17 @@ systemctl restart php5-fpm.service
 ## Nginx site configuration
 
 mkdir dev
-git clone 
+git clone https://github.com/rtulke/gsNginx.git
+cp ./gsNginx/etc/nginx/sites-available/gsales.mydomain.com /etc/nginx/sites-available/
+cd /etc/nginx/sites-enabled/
+ln -s ../sites-available/gsales.mydomain.com gsales.mydomain.com
+systemctl restart nginx
 
+or:
+/etc/init.d/nginx restart
+
+or:
+serice nginx restart
 
 ## Troubleshooting
 
