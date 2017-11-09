@@ -6,9 +6,9 @@ gSales Nginx Configuration
 
 - <http://www.zend.com/en/products/loader/downloads#Linux>
 
-You have to register on the Zend website first.
+You have to register on Zend website first.
 
-## Zend Guard Loader 5.6 installation
+## Zend Guard Loader 5.6 installation (Debian 8.x, 9.x)
 
 after registration:
 
@@ -46,24 +46,24 @@ zend_loader.license_path=
 ~~~
 
 ~~~
-systemctl restart php5-fpm.service
+systemctl restart php5-fpm
 ~~~
 
 
 ## Nginx site configuration
 
+~~~
+su - root
 mkdir dev
 git clone https://github.com/rtulke/gsNginx.git
 cp ./gsNginx/etc/nginx/sites-available/gsales.mydomain.com /etc/nginx/sites-available/
 cd /etc/nginx/sites-enabled/
 ln -s ../sites-available/gsales.mydomain.com gsales.mydomain.com
 systemctl restart nginx
+~~~
 
-or:
-/etc/init.d/nginx restart
-
-or:
-serice nginx restart
+or: /etc/init.d/nginx restart
+or: service nginx restart
 
 ## Troubleshooting
 
