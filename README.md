@@ -55,6 +55,7 @@ systemctl restart php5-fpm
 ~~~
 su - root
 mkdir dev
+cd dev
 git clone https://github.com/rtulke/gsNginx.git
 cp ./gsNginx/etc/nginx/sites-available/gsales.mydomain.com /etc/nginx/sites-available/
 cd /etc/nginx/sites-enabled/
