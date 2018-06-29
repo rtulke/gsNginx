@@ -1,4 +1,4 @@
-# gsNginx
+# gs*Nginx
 [gSales](https://www.gsales.de "gSales's Homepage") Nginx Configuration on Debian 8.x, 9.x
 
 
