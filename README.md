@@ -2,13 +2,13 @@
 [gSales](https://www.gsales.de "gSales's Homepage") Nginx Configuration on Debian 8.x, 9.x
 
 
-## Download Zend Guard Loader from website:
+## 1. Step - Download Zend Guard Loader from website:
 
 - <http://www.zend.com/en/products/loader/downloads#Linux>
 
 You have to register on Zend website first.
 
-## Zend Guard Loader 5.6 installation
+## 2. Step - Zend Guard Loader 5.6 installation
 
 after registration:
 
@@ -24,7 +24,7 @@ cp zend-loader-php5.6-linux-x86_64/opcache.so /usr/lib/php5/20131226/
 chmod 644 /usr/local/zend/ZendGuardLoader.so
 ~~~
 
-## PHP FPM Nginx configuration
+## 3. Step PHP FPM Nginx configuration
 
 ~~~
 vim /etc/php5/fpm/php.ini 
@@ -68,6 +68,8 @@ systemctl restart nginx
 
 ## Troubleshooting
 
+### Incompatible file format
+
 Error Log from Nginx:
 
 ~~~
@@ -85,3 +87,7 @@ Incompatible file format:  The encoded file has format major ID 5, whereas the L
 
 This means that the website (the PHP files) was coded with Zend 5.5 and it is expected to use Zend 5.5.
 But instead version 7 (ZendLoader 7) was installed. The installation of an older version is a remedy.
+
+### after upgrading php-fpm
+
+Sometimes, after upgrading php and also php-fpm i had some issues with gsales (site is down), then i run step 2 and 3 again and that works for me.
